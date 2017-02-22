@@ -25,9 +25,7 @@ class ThemeServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        Route::get('/style/backend', function() {
-            return Server::serveFrom(__DIR__.'/../resources/sass/bootstrap');
-        });
+
     }
 
 }

@@ -2,8 +2,7 @@
     "name": "storycms/theme",
     "require": {
         "php": ">=5.6.3",
-        "laravel/framework": "5.4.*",
-        "leafo/scssphp": "^0.6.6"
+        "laravel/framework": "5.4.*"
     },
     "license": "MIT",
     "authors": [

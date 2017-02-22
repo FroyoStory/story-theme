@@ -1,0 +1,27 @@
+{
+    "name": "storycms/theme",
+    "require": {
+        "php": ">=5.6.3",
+        "laravel/framework": "5.4.*",
+        "leafo/scssphp": "^0.6.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PT Froyo Kreatif Indonesia",
+            "email": "hello@froyo.co.id"
+        },
+        {
+            "name": "Purwandi",
+            "email": "purwandi@froyo.co.id"
+        }
+    ],
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Story\\Theme\\": "src"
+        }
+    }
+}

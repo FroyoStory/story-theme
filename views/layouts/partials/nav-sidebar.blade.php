@@ -31,5 +31,6 @@
       @endif
     </li>
     @endforeach
+    <li><a href="/backend/logout" class="main-menu"><i class="material-icons">exit_to_app</i> <span>SIGN OUT</span></a></li>
   </ul>
 </nav>

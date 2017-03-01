@@ -1,6 +1,6 @@
 <nav class="">
   <ul>
-    <li><a href="" class="main-menu"><i class="material-icons">album</i> <span>STORY</span></a></li>
+    <li><a href="/backend" class="main-menu"><i class="material-icons">album</i> <span>STORY</span></a></li>
   </ul>
   <ul id="nav" role="menubar" class="sidebar-menu">
     @foreach (Navigation::get('backend') as $key => $navigation)

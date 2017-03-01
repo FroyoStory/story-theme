@@ -12,6 +12,7 @@
       @include('story-theme::layouts.partials.nav-sidebar')
     </div>
     <div class="page-wrapper">
+      @include('story-theme::layouts.partials.flash-message')
       @yield('content')
     </div>
     <div class="admin__menu-overlay"></div>

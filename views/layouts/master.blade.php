@@ -18,6 +18,6 @@
     <div class="admin__menu-overlay"></div>
     <div class="modal-wrapper"></div>
 
-    <script src="/js/app.js"></script>
+    <script src="/js/backend.js"></script>
   </body>
 </html>

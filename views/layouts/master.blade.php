@@ -28,16 +28,18 @@
     <div class="admin__menu-overlay"></div>
     <div class="modal-wrapper"></div>
 
-    <script src="/js/backend.js"></script>
+    <script src="/js/app.js"></script>
     <script src="/vendor/ckeditor/ckeditor.js"></script>
     <script>
      $(document).ready(function() {
-      CKEDITOR.replace('body', {
-        filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
-        filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
-        filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
-        filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}'
-      })
+      if ($('textarea[name=body]').length) {
+        CKEDITOR.replace('body', {
+          filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+          filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
+          filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+          filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}'
+        })
+      }
      })
     </script>
   </body>

@@ -11,6 +11,6 @@
 
     @yield('content')
 
-    <script src="/js/backend.js"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>

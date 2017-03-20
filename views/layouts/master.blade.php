@@ -20,8 +20,10 @@
         </div>
       </div>
       <!-- END HEADER AREA -->
+      <div class="container-fluid">
+        @include('story-theme::layouts.partials.flash-message')
+      </div>
 
-      @include('story-theme::layouts.partials.flash-message')
       @yield('content')
     </div>
 

@@ -20,7 +20,7 @@
                   <h5>{{ Str::title($key_group) }}</h5>
                   <ul>
                     @foreach ($group as $item)
-                    <li><a href="/backend/{{ $key }}/{{$key_group}}/{{$item}}">{{ Str::title($item) }}</a></li>
+                    <li><a href="/backend/{{ $key }}/{{$key_group}}/{{$item}}">{{ Str::title(str_replace('-', ' ', $item)) }}</a></li>
                     @endforeach
                   </ul>
                 </div>

@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ session()->token() }}"/>
     <link rel="stylesheet" href="/css/backend.css">
     @yield('meta')
+    @yield('css')
   </head>
   <body>
     <div class="menu-wrapper fixed">
@@ -44,5 +45,6 @@
       }
      })
     </script>
+    @yield('js')
   </body>
 </html>

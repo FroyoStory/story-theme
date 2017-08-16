@@ -30,21 +30,21 @@
 
     <div class="admin__menu-overlay"></div>
     <div class="modal-wrapper"></div>
-
-    <script src="/js/backend.js"></script>
-    <script src="/vendor/ckeditor/ckeditor.js"></script>
-    <script>
-     $(document).ready(function() {
-      if ($('textarea[name=body]').length) {
-        CKEDITOR.replace('body', {
-          filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
-          filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
-          filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
-          filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}'
-        })
-      }
-     })
-    </script>
     @yield('js')
+      <script src="/js/backend.js"></script>
+      <script src="/vendor/ckeditor/ckeditor.js"></script>
+      <script>
+       $(document).ready(function() {
+        if ($('textarea[name=body]').length) {
+          CKEDITOR.replace('body', {
+            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+            filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
+            filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+            filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}'
+          })
+        }
+       })
+    @show
+    </script>
   </body>
 </html>

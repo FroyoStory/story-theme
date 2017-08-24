@@ -30,7 +30,7 @@
 
     <div class="admin__menu-overlay"></div>
     <div class="modal-wrapper"></div>
-    @yield('js')
+    @section('js')
       <script src="/js/backend.js"></script>
       <script src="/vendor/ckeditor/ckeditor.js"></script>
       <script>
